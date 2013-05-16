@@ -11,5 +11,6 @@ pyantigate
 Для работы необходим модуль [Requests](https://github.com/kennethreitz/requests)
 
     $ easy_install requests
- 
+ Или
+
     $ pip install requests
