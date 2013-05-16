@@ -1,4 +1,4 @@
-antigate
+pyantigate
 ========
 
 Модуль для использования Antigate (antigate.com)
