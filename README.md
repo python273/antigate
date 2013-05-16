@@ -6,4 +6,4 @@ antigate
 
 Установка
 ------------
-    $ easy_install antigate
+    $ easy_install pyantigate
