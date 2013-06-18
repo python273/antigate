@@ -25,7 +25,7 @@ class Antigate():
         if 'OK' in response:
             capcha_id = response.split('|')[1]
         else:
-            raise antigate_error(response)
+            raise error(response)
 
         text = self.check(capcha_id)
 
@@ -46,7 +46,7 @@ class Antigate():
                 return response.split('|')[1]
 
             elif 'ERROR' in response:
-                raise antigate_error(response)
+                raise error(response)
 
     def balance(self):
         """ Check the balance of Antigate"""
@@ -60,7 +60,7 @@ class Antigate():
         if not 'ERROR' in response:
             return float(response)
         else:
-            raise antigate_error(response)
+            raise error(response)
 
 
 class Capcha():
@@ -92,12 +92,12 @@ class Capcha():
         if 'OK' in response:
             return True
         else:
-            raise antigate_error(response)
+            raise error(response)
 
 
-class antigate_error(Exception):
+class error(Exception):
     pass
 
 if __name__ == '__main__':
-    print help(Antigate)
-    print help(Capcha)
+    help(Antigate)
+    help(Capcha)
